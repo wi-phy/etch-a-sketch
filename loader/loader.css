@@ -1,0 +1,110 @@
+/* Define time and angle interval */
+:root {
+  --delta-t: 0.1s;
+  --delta-angle: -36deg;
+  --delta-opacity: ;
+}
+
+/* General dot properties */
+.dot {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+  opacity: 0;
+
+  left: 50%;
+  top: 50%;
+  transform-origin: calc(50% - 50px) 50%;
+}
+
+/* Dot placement and animation */
+
+.dot:nth-child(1) {
+  transform: translate(calc(-50% + 50px), -50%)
+    rotate(calc(var(--delta-angle) * 1));
+  animation: fade 1s calc(var(--delta-t) * -1) ease-in infinite;
+}
+
+.dot:nth-child(2) {
+  transform: translate(calc(-50% + 50px), -50%)
+    rotate(calc(var(--delta-angle) * 2));
+  animation: fade 1s calc(var(--delta-t) * -2) ease-in infinite;
+}
+
+.dot:nth-child(3) {
+  transform: translate(calc(-50% + 50px), -50%)
+    rotate(calc(var(--delta-angle) * 3));
+  animation: fade 1s calc(var(--delta-t) * -3) ease-in infinite;
+}
+
+.dot:nth-child(4) {
+  transform: translate(calc(-50% + 50px), -50%)
+    rotate(calc(var(--delta-angle) * 4));
+  animation: fade 1s calc(var(--delta-t) * -4) ease-in infinite;
+}
+
+.dot:nth-child(5) {
+  transform: translate(calc(-50% + 50px), -50%)
+    rotate(calc(var(--delta-angle) * 5));
+  animation: fade 1s calc(var(--delta-t) * -5) ease-in infinite;
+}
+
+.dot:nth-child(6) {
+  transform: translate(calc(-50% + 50px), -50%)
+    rotate(calc(var(--delta-angle) * 6));
+  animation: fade 1s calc(var(--delta-t) * -6) ease-in infinite;
+}
+
+.dot:nth-child(7) {
+  transform: translate(calc(-50% + 50px), -50%)
+    rotate(calc(var(--delta-angle) * 7));
+  animation: fade 1s calc(var(--delta-t) * -7) ease-in infinite;
+}
+
+.dot:nth-child(8) {
+  transform: translate(calc(-50% + 50px), -50%)
+    rotate(calc(var(--delta-angle) * 8));
+  animation: fade 1s calc(var(--delta-t) * -8) ease-in infinite;
+}
+
+.dot:nth-child(9) {
+  transform: translate(calc(-50% + 50px), -50%)
+    rotate(calc(var(--delta-angle) * 9));
+  animation: fade 1s calc(var(--delta-t) * -9) ease-in infinite;
+}
+
+.dot:nth-child(10) {
+  transform: translate(calc(-50% + 50px), -50%)
+    rotate(calc(var(--delta-angle) * 10));
+  animation: fade 1s calc(var(--delta-t) * -10) ease-in infinite;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+/* PLacement */
+
+.container {
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
